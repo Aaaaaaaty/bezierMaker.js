@@ -1,4 +1,6 @@
 # bezierMaker.js
+[以中文查看](https://github.com/Aaaaaaaty/bezierMaker.js/blob/master/README-CH.md)
+
 Native HTML5 canvas can only support bezier curves up to third order. 
 
 **bezierMaker.js supports the formation of arbitrary order of bezier curves in theory. And provide a [playground](https://aaaaaaaty.github.io/bezierMaker.js/playground/playground.html) on which can add and move control points, and generate draw animation.**
@@ -15,7 +17,7 @@ Native HTML5 canvas can only support bezier curves up to third order.
 
 [playground website](https://aaaaaaaty.github.io/bezierMaker.js/playground/playground.html)
 ## Usage
-### Preparation
+### preparation
 ```
 <script src="./bezierMaker.js"></script>
 ```
