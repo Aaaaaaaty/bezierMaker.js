@@ -1,5 +1,7 @@
 # bezierMaker.js
-原生HTML5的canvas中所支持的贝塞尔曲线最多只到3阶。bezierMaker.js可以理论支持N阶贝塞尔曲线的生成，同时提供了[试验场](https://aaaaaaaty.github.io/bezierMaker.js/playground/playground.html)来自行添加拖拽控制点并形成绘制动画。
+原生HTML5的canvas中所支持的贝塞尔曲线最多只到3阶
+
+bezierMaker.js可以理论支持N阶贝塞尔曲线的生成，同时提供了[试验场](https://aaaaaaaty.github.io/bezierMaker.js/playground/playground.html)来自行添加拖拽控制点并形成绘制动画
 
 
 ## Features
@@ -12,6 +14,7 @@
 ## ScreenShots
 ![2017-12-28 17_21_52](https://user-images.githubusercontent.com/15126694/34406374-a5ebec54-ebf3-11e7-8a60-705261c7d0e4.gif)
 ![2017-12-28 17_38_06](https://user-images.githubusercontent.com/15126694/34406896-71c66528-ebf6-11e7-8aa0-7dcd16ef189e.gif)
+
 [试验场传送门](https://aaaaaaaty.github.io/bezierMaker.js/playground/playground.html)
 ## Usage
 ```
