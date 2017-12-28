@@ -48,7 +48,7 @@ bezier4.drawBezier()
 ### Effect
 ![image](https://user-images.githubusercontent.com/15126694/34406670-50cf6e10-ebf5-11e7-9299-9cfb983e5f78.png)
 
-在绘制复杂的高阶贝塞尔曲线时无法知道每个控制点的精确位置可以在试验场中进行模拟，将得到的点坐标变为对象数组传递进```BezierMaker```类即可。
+在绘制复杂的高阶贝塞尔曲线时无法知道自己需要的曲线的控制点的精确位置。在试验场中进行模拟，可以实时得到控制点的坐标值，将得到的点坐标变为对象数组传递进```BezierMaker```类就可以生成目标曲线
 
 ## License
 ```
