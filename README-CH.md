@@ -1,33 +1,34 @@
 # bezierMaker.js
-Native HTML5 canvas can only support bezier curves up to third order. 
+原生HTML5的canvas中所支持的贝塞尔曲线最多只到3阶
 
-**bezierMaker.js supports the formation of arbitrary order of bezier curves in theory. And provide a [playground](https://aaaaaaaty.github.io/bezierMaker.js/playground/playground.html) on which can add and move control points, and generate draw animation.**
+bezierMaker.js可以理论支持N阶贝塞尔曲线的生成，同时提供了[试验场](https://aaaaaaaty.github.io/bezierMaker.js/playground/playground.html)来自行添加拖拽控制点并形成绘制动画
+
 ## Features
-- [x] There can be arbitrary number of control points in playground.
-- [x] The playground can show the display of the formation of curves.
-- [x] Control points can be moved freely. 
-- [x] The playground can show the tangent of the formation of bezier curves.
-- [x] The formations of the less than or equal to third order bezier curves are based on the native API. 
+- [x] 试验场可添加任意数量控制点
+- [x] 试验场支持展示曲线绘制的形成动画
+- [x] 控制点可自由拖拽
+- [x] 支持显示贝塞尔曲线形成过程的切线
+- [x] 3阶及以下贝塞尔曲线的绘制采用原生API
 
 ## ScreenShots
 ![2017-12-28 17_21_52](https://user-images.githubusercontent.com/15126694/34406374-a5ebec54-ebf3-11e7-8a60-705261c7d0e4.gif)
 ![2017-12-28 17_38_06](https://user-images.githubusercontent.com/15126694/34406896-71c66528-ebf6-11e7-8aa0-7dcd16ef189e.gif)
 
-[playground website](https://aaaaaaaty.github.io/bezierMaker.js/playground/playground.html)
+[试验场传送门](https://aaaaaaaty.github.io/bezierMaker.js/playground/playground.html)
 ## Usage
-### preparation
+### 引入
 ```
 <script src="./bezierMaker.js"></script>
 ```
-### Get Started
+### 绘制
 ```
 /**
- * canvas canvas's dom object
- * bezierCtrlNodesArr control point's array
- * color curve's color
+ * canvas canvas的dom对象
+ * bezierCtrlNodesArr 控制点数组，包含x，y坐标
+ * color 曲线颜色
  */
 var canvas = document.getElementById('canvas')
-//The formations of the less than or equal to third order bezier curves are based on the native API. 
+//3阶之前采用原生方法实现
 var arr0 = [{x:70,y:25},{x:24,y:51}]
 var arr1 = [{x:233,y:225},{x:170,y:279},{x:240,y:51}]
 var arr2 = [{x:23,y:225},{x:70,y:79},{x:40,y:51},{x:300, y:44}]
@@ -47,8 +48,7 @@ bezier4.drawBezier()
 ### Effect
 ![image](https://user-images.githubusercontent.com/15126694/34406670-50cf6e10-ebf5-11e7-9299-9cfb983e5f78.png)
 
-You can not know the exact position of the control point of the curve you want when drawing a complex higher order Bezier curve. 
-When simulate in playground, we can get the coordinates of the control point in real time. Then we can make the coordinates into an array of objects and pass it into ```BezierMaker``` class to get the target curve.
+在绘制复杂的高阶贝塞尔曲线时无法知道自己需要的曲线的控制点的精确位置。在试验场中进行模拟，可以实时得到控制点的坐标值，将得到的点坐标变为对象数组传递进```BezierMaker```类就可以生成目标曲线
 ## License
 ```
 Copyright (C) 2017 2103887953@qq.com
