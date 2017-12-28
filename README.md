@@ -15,7 +15,7 @@ Native HTML5 canvas can only support bezier curves up to third order.
 
 [playground website](https://aaaaaaaty.github.io/bezierMaker.js/playground/playground.html)
 ## Usage
-### preparation
+### Preparation
 ```
 <script src="./bezierMaker.js"></script>
 ```
