@@ -3,7 +3,6 @@
 
 bezierMaker.js可以理论支持N阶贝塞尔曲线的生成，同时提供了[试验场](https://aaaaaaaty.github.io/bezierMaker.js/playground/playground.html)来自行添加拖拽控制点并形成绘制动画
 
-
 ## Features
 - [x] 试验场可添加任意数量控制点
 - [x] 试验场支持展示曲线绘制的形成动画
@@ -17,6 +16,11 @@ bezierMaker.js可以理论支持N阶贝塞尔曲线的生成，同时提供了[�
 
 [试验场传送门](https://aaaaaaaty.github.io/bezierMaker.js/playground/playground.html)
 ## Usage
+### 引入
+```
+<script src="./bezierMaker.js"></script>
+```
+### 绘制
 ```
 /**
  * canvas canvas的dom对象
