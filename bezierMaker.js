@@ -21,8 +21,8 @@ BezierMaker.prototype.bezier = function(t) { //贝塞尔公式调用
             x += item.x * Math.pow(( 1 - t ), n - index) * Math.pow(t, index) 
             y += item.y * Math.pow(( 1 - t ), n - index) * Math.pow(t, index) 
         } else {
-            x += self.factorial(n) / self.factorial(index) / self.factorial(n - index) * item.x * Math.pow(( 1 - t ), n - index) * Math.pow(t, index) 
-            y += self.factorial(n) / self.factorial(index) / self.factorial(n - index) * item.y * Math.pow(( 1 - t ), n - index) * Math.pow(t, index) 
+            x += self.factorial(n, 1) / self.factorial(index, 1) / self.factorial(n - index, 1) * item.x * Math.pow(( 1 - t ), n - index) * Math.pow(t, index) 
+            y += self.factorial(n, 1) / self.factorial(index, 1) / self.factorial(n - index, 1) * item.y * Math.pow(( 1 - t ), n - index) * Math.pow(t, index) 
         }
     })
     return {
@@ -80,10 +80,10 @@ BezierMaker.prototype.drawBezier = function() { //通过控制点算出实时xy�
     }
     
 }
-BezierMaker.prototype.factorial = function(num) { //递归阶乘
+BezierMaker.prototype.factorial = function(num, total) { //递归阶乘
     if (num <= 1) {
-        return 1;
+        return total;
     } else {
-        return num * this.factorial(num - 1);
+        return this.factorial(num - 1, num * total);
     }
 }
